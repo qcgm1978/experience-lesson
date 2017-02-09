@@ -125,7 +125,7 @@ let Zero = React.createClass({
 //     <Zero/>
 // ), document.getElementById('app'))
 //render
-let Common = {
+let Common = React.createClass({
     getId(){
         return ReactDOM.findDOMNode(this).parentNode.getAttribute("id")
     },
@@ -141,20 +141,23 @@ let Common = {
     },
     getSpan(val){
         return <span>{val || this.state.id}</span>;
+    },
+    render(){
+        return this.getSpan(this.props.name)
     }
-};
+});
 var SimpleView = React.createClass({
-    mixins: [Common],
+    // mixins: [Common],
     render: function () {
-        return (this.getSpan());
+        return (<Common/>);
     }
 });
 render((<SimpleView/>), document.getElementById('render-simple'));
 //jsx: The simplest component need only include a render() method
 var WelcomeBanner = React.createClass({
-    mixins: [Common],
+    // mixins: [Common],
     render: function () {
-        return this.getSpan();
+        return <Common/>;
     }
 });
 render(<WelcomeBanner />, document.getElementById('render-jsx'));
@@ -174,9 +177,9 @@ function func() {
 func()
 function componentsWithProp() {
     var WelcomeBanner = React.createClass({
-        mixins: [Common],
+        // mixins: [Common],
         render: function () {
-            return this.getSpan(this.props.name);
+            return <Common name={this.props.name}/>;
         }
     });
     let id = 'props';
@@ -185,7 +188,7 @@ function componentsWithProp() {
 componentsWithProp()
 //Components have state
 var WelcomeBanner = React.createClass({
-    mixins: [Common],
+    // mixins: [Common],
     getInitialState: function () {
         return {times: 0};
     },
@@ -195,7 +198,7 @@ var WelcomeBanner = React.createClass({
     render: function () {
         return (
             <section>
-                <div> {this.getSpan(this.props.name)}</div>
+                <div> <Common name={this.props.name}/></div>
                 <div>Times clicked: { this.state.times }</div>
                 <button onClick={ this.handleClick }>Add One</button>
             </section>
