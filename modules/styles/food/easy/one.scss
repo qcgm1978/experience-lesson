@@ -1,0 +1,20 @@
+#easy-one {
+  &.container {
+    background-image: url(../../../../build/images/food/easy/1/bg.png);
+    #food {
+      position: absolute;
+      top: 39%;
+      left: 42%;
+      > img {
+        margin-left: 9%;
+        &:last-child {
+          margin-left: 17%;
+        }
+      }
+    }
+    .check {
+      right: 20%;
+      bottom: 10%;
+    }
+  }
+}

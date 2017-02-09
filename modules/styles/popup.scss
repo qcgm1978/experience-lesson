@@ -1,0 +1,46 @@
+#popup-container {
+  #popup {
+    z-index: 10;
+    position: absolute;
+    min-width: percentage(100/600);
+    max-width: percentage(200/600);
+    font-size: 32px;
+    color: #444;
+    word-wrap: break-word;
+    transform: translate(-10px, calc(-100% - 114px));
+    #options div {
+      background: #fff;
+      padding: 10px;
+
+      &:hover {
+        background: #7BD339;
+        color: #fff;
+      }
+    }
+    img {
+      position: absolute;
+      transform: translate(70%, -100%);
+    }
+    .fill {
+      position: absolute;
+      left: 58%;
+      pointer-events: none;
+      top: 20px;
+      width: 130px;
+    }
+  }
+  #question-container {
+    position: absolute;
+
+    #question {
+      transform: translate(-13%, -120%);
+      position: absolute;
+    }
+    #num-icon {
+      position: absolute;
+      pointer-events: none;
+      left: 199px;
+      top: -110px;
+    }
+  }
+}

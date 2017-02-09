@@ -1,0 +1,191 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    height:auto;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+}
+.scene{
+    background-color: #fff;
+    width:1920px;
+    height:1080px;
+    position: relative;
+    .bg{
+        left:0;
+        top:0;
+        z-index: 0;
+    }
+    .pos-abs{
+        position: absolute;
+    }
+    .title{
+        left:80px;
+        top:40px;
+    }
+
+    .boy{
+        right:240px;
+        bottom:0;
+        cursor: pointer;
+    }
+
+    .carousel-content {
+        position: absolute;
+        top: 0;
+    }
+
+    .widget-wrap{
+        left:160px;
+        top:320px;
+        width: 800px;
+        height: 500px;
+        .question-item {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 40px;
+            cursor: pointer;
+        }
+        .question-item:hover {
+            box-shadow: 0 0 30px 0 rgb(239, 241, 106);
+        }
+        .question-item.active {
+            box-shadow: 0 0 30px 0 rgb(239, 241, 106);
+        }
+    }
+.carousel{
+    position: absolute;
+}
+    .carousel-content {
+        position: absolute;
+        width: 80%;
+        top: 24%;
+        height: 60%;
+        left: 10%;
+    }
+    .carousel-content img {
+        width: 75%;
+        display: block;
+        margin: auto;
+    }
+
+    p.text {
+        position: absolute;
+        bottom: 0;
+        font-size: 150%;
+        text-align: center;
+        color: white;
+        cursor: pointer!important;
+        left: 0;
+        right: 0;
+        line-height: 50%;
+    }
+    p.text span.empty{
+        border-bottom: 2px solid white;
+        display: inline-block;
+        min-width: 50%;
+        height: 30px;
+        cursor: pointer;
+    }
+    .weathery.active{
+        display: block!important;
+    }
+
+    .question-wrap{
+        right:430px;
+        top:370px;
+        min-width: 350px;
+        min-height: 120px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.76);
+        p {
+            line-height: 32px;
+            font-size: 24px;
+            color: #333;
+            span{
+                display: inline-block;
+                border-bottom: 2px solid #333;
+                text-align: center;
+                white-space: nowrap;
+                color: orange;
+                cursor: pointer;
+                vertical-align: middle;
+                height: 26px;
+                line-height: 30px;
+                &:hover{
+                    box-shadow: 0 0 10px 6px #c3c2c2 inset;
+                    border-radius: 4px;
+                }
+            }
+
+            .answer-weathery {
+                min-width: 100px;
+                max-width: 300px;
+            }
+            .answer-dosomething {
+                min-width: 240px;
+                max-width: 300px;
+            }
+            .answer-weatherly {
+                min-width: 100px;
+                max-width: 300px;
+            }
+        }
+    }
+    ul.answer{
+        padding:5px;
+        display: none;
+        background-color: white;
+        min-width: 250px;
+        max-width: 300px;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        li {
+            min-width: 100px;
+            text-align: center;
+            line-height: 35px;
+            color: rgb(56, 159, 232);
+            &:hover{
+                background-color:#7bd339;
+                color: #2196F3;
+            }
+        }
+
+    }
+    .answer:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 20%;
+        margin-left: -15px;
+        top: -12px;
+        border: 15px solid white;
+        border-top-width: 0;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    ul.answer.active{
+        display: block;
+    }
+    .weathery {
+        right: 470px;
+        top: 430px;
+    }
+    .dosomething{
+        right: 380px;
+        top: 460px;
+    }
+    .weatherly{
+        right: 450px;
+        top: 490px;
+    }
+    ins{
+        text-decoration: none;
+    }
+}

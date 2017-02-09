@@ -1,0 +1,53 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -d --progress --colors --watch",
+    "copy": "copyfiles 'modules/**/*' 'images/**/*' ./build",
+    "copy1": "copyfiles -f ./modules/index.html ./build",
+    "copy2": "copyfiles -u './build/**/*' ./00",
+    "publish": "webpack -p",
+    "zip": "zip -r demo.zip build",
+    "sass": "mkdir build/style & sass modules/styles/common.scss build/style/common.css",
+    "sass1": "sass modules/styles/public-control.scss build/style/public-control.css",
+    "sass2": "sass modules/styles/eleven.scss build/style/eleven.css",
+    "babel": "babel ./modules/public-control-pure.js -o ./build/script/public-control-pure.js",
+    "connect": " sudo umount -f '/Volumes/data'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copyfiles": "^1.0.0",
+    "css-loader": "^0.23.1",
+    "del-cli": "^0.2.0",
+    "jquery": "^3.1.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.8.0",
+    "normalize.css": "^4.2.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.0.0",
+    "redux": "^3.5.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack-livereload-plugin": "^0.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "expose-loader": "^0.7.1",
+    "http-server": "^0.8.5",
+    "image-webpack-loader": "^2.0.0",
+    "imports-loader": "^0.6.5",
+    "node-sass": "^3.8.0",
+    "redux-devtools": "^3.3.1",
+    "sass-loader": "^4.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

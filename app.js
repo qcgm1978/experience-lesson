@@ -1,0 +1,27 @@
+import './node_modules/normalize.css/normalize.css'
+import './bower_components/animate.css/animate.css'
+import './modules/styles/common.scss'
+import './bower_components/jquery-ui-1.12.0.custom/jquery-ui.js'
+//import './modules/styles/responsive.scss'
+//import './modules/styles/responsive-scale.scss'
+//import './modules/styles/responsive-scale-1920.scss'
+//import React from 'react'
+//import { Router, Route, hashHistory } from 'react-router'
+//import { render } from 'react-dom'
+//import App from './modules/App'
+//import Zero from './modules/zero'
+//import One from './modules/one'
+//import Two from './modules/two'
+//
+//import Eight from './modules/eight'
+//import Nine from './modules/nine'
+//import Ten from './modules/ten'
+//import Eleven from './modules/eleven'
+//import Test from './modules/test'
+//import PublicControl from './modules/public-control'
+//import HardTwo from './modules/phonics-hard/one'
+//import HardThree from './modules/phonics-hard/three'
+//import NotFoundRoute from './modules/not-found-route'
+//render((
+//   <Zero/>
+//), document.getElementById('app'))

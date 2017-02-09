@@ -1,0 +1,138 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    height:auto;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.scene{
+    background-color: #fff;
+    width:1920px;
+    height:1080px;
+    position: relative;
+
+    .pos-abs{
+        position: absolute;
+    }
+    .title{
+        left:80px;
+        top:40px;
+    }
+    .box-wrap{
+        left:0;
+        right:0;
+        top:54px;
+        bottom:350px;
+        @at-root {
+            .show-wrap {
+                height: 700px;
+                width:810px;
+                left: 610px;
+            }
+            .big-img{
+                margin-top: -50px;
+            }
+            .txt{
+                bottom: 0;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            .box-txt {
+                bottom: 100px;
+                font-size: 60px;
+                font-weight: bolder;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+    }
+    .big-show{
+        position: absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        .item{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            img{
+                transform-origin: center center;
+                transform: translate(-50%, -50%) scale(0);
+                transition:transform 0.6s ease-in-out;
+            }
+            .box-txt{
+                transform-origin: center center;
+                transform: scale(0);
+                transition:transform 0.6s ease-in-out;
+            }
+        }
+        .item.active{
+
+            img{
+                transform: translate(-50%, -50%) scale(1);
+            }
+            .box-txt{
+                transform: scale(1);
+            }
+        }
+    }
+    .list{
+        left:0;
+        right:0;
+        text-align: center;
+        font-size: 0;
+        bottom:10px;
+        .list-item:hover{
+            .mask-play{
+                opacity: .5;
+                display: block;
+            }
+        }
+        .list-item.noactive{
+            .mask-play{
+                display: block;
+            }
+        }
+
+        .list-item{
+            font-size: 16px;
+            overflow: hidden;
+            width:280px;
+            position: relative;
+            height:300px;
+            margin:0 30px;
+            display: inline-block;
+            vertical-align: middle;
+            @at-root {
+                .mini-bg{
+                    left:0;
+                }
+            }
+        }
+    }
+}
+@keyframes upout {
+    from{
+        bottom: -50px;
+    }
+    8%{
+        bottom:200px;
+    }
+    10%{
+        bottom: 250px;
+    }
+    60%{
+        bottom: 0;
+    }
+    85%{
+        bottom: 30px;
+    }
+    to{
+        bottom: 12px;
+    }
+}

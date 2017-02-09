@@ -1,0 +1,25 @@
+{
+  "name": "tutorial",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "qcgm1978 <zhanghl@strongunion.com.cn>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/reactjs/react-router-tutorial",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "underscore": "^1.8.3",
+    "jquery": "^3.1.0",
+    "spotlight": "https://github.com/morganslimak/spotlight.git",
+    "jquery.line": "https://github.com/tbem/jquery.line.git"
+  }
+}

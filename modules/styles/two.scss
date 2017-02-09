@@ -1,0 +1,8 @@
+#two {
+
+  background-image: url('../../build/images/phonics/easy/2/bg.png');
+  position: relative;
+  [src$="b-letter.png"],[src$="all.png"],[src$="a-letter.png"],[src$="pple.png"]{
+    z-index: 10;
+  }
+}

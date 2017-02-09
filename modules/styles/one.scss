@@ -1,0 +1,57 @@
+#one {
+  #apple {
+    position: absolute;
+    right: 20%;
+    bottom: 40%;
+  }
+  &.one {
+    background-image: url('../../build/images/phonics/easy/1/bg.png');
+  }
+  position: relative;
+  #a {
+    position: absolute;
+    left: 15%;
+    top: 38%;
+  }
+  #b {
+    position: absolute;
+    left: 18%;
+    top: 47%;
+  }
+  #c {
+    position: absolute;
+    left: 21%;
+    top: 56%;
+  }
+
+  #cat {
+    position: absolute;
+    left: percentage(154/600);
+    top: percentage(308/500);
+  }
+  #ball {
+    position: absolute;
+    left: percentage(301/600);
+    top: percentage(370/500);
+  }
+  #music {
+    position: absolute;
+    left: percentage(365/600);
+    top: percentage(105/500);
+  }
+  #sentence-a {
+    position: absolute;
+    left: percentage(20/600);
+    top: percentage(152/500);
+  }
+  #sentence-b {
+    position: absolute;
+    left: percentage(65/600);
+    top: percentage(200/500);
+  }
+  #sentence-c {
+    position: absolute;
+    left: percentage(111/600);
+    top: percentage(250/500);
+  }
+}

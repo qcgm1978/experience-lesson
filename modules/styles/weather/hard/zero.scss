@@ -1,0 +1,93 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    height:auto;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+}
+.scene{
+    background-color: #faee00;
+    width:1920px;
+    height:1080px;
+    position: relative;
+    .animation{
+        left:0;
+        top:0;
+        z-index: 1;
+    }
+    .pos-abs{
+        position: absolute;
+    }
+    .sun{
+        right:80px;
+        top:40px;
+    }
+    .whats{
+        left: calc(263px + 110px);
+        top:90px;
+        z-index: 0;
+    }
+    .the{
+        right:430px;
+        top:250px;
+        z-index: 2;
+    }
+    .weather{
+        left:430px;
+        top:390px;
+    }
+    .like{
+        bottom:230px;
+        left:770px;
+    }
+    section{
+        z-index: 3;
+        left:210px;
+        bottom:110px;
+        .label,.title{
+            display: block;
+        }
+        .label{
+            margin-top: 50px;
+        }
+        .show-words{
+            span,i{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .radius{
+                width:10px;
+                height:10px;
+                background-color: black;
+                border-radius: 10px;
+                margin-right:10px;
+                margin-top:20px;
+            }
+            .text{
+                line-height: 30px;
+                font-size:30px;
+                margin-top:20px;
+            }
+        }
+    }
+    .a-logo{
+        z-index:3;
+        left:40px;
+        top:40px;
+        width: 263px;
+        height:263px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+

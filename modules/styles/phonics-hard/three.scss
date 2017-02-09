@@ -1,0 +1,40 @@
+@import '../common/matching.scss';
+
+#hard-three {
+  &.container {
+
+    > img {
+
+      position: absolute;
+
+    }
+    @mixin block() {
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      img:nth-child(n+2) {
+        //margin-left: 12%;
+
+      }
+      $elements: 5;
+      @for $i from 2 to $elements {
+        img:nth-child(#{$i}) {
+          position: absolute;
+          left: percentage((($i)-1)*0.27);
+        }
+      }
+    }
+    #words {
+      @include block();
+      top: 30%;
+    }
+    #pics {
+      @include block();
+      top: 60%;
+    }
+    .check {
+      bottom: 7%;
+      left: 50%;
+    }
+  }
+}

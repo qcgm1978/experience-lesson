@@ -1,0 +1,108 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    height:auto;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+}
+.scene{
+    background-color: #fff;
+    width:1920px;
+    height:1080px;
+    position: relative;
+
+    .pos-abs{
+        position: absolute;
+    }
+    .title{
+        left:80px;
+        top:40px;
+    }
+    .list{
+        left:190px;
+        font-size: 0;
+        bottom:210px;
+        height:534px;
+        width: 1538px;
+        .list-item:hover{
+            .mask-play{
+                opacity: .5;
+                display: block;
+            }
+        }
+        .list-item.noactive{
+            .mask-play{
+                display: block;
+            }
+        }
+        .list-item{
+            font-size: 16px;
+            overflow: hidden;
+            width:304px;
+            cursor: pointer;
+            position: relative;
+            height:100%;
+            margin:0 40px;
+            display: inline-block;
+            vertical-align: middle;
+            .mask-play {
+                z-index: 3;
+                display: none;
+                transition: all 200ms;
+            }
+            .bg{
+                z-index: 0;
+            }
+            .animation{
+                z-index: 2;
+                left: 0;
+                top: -10px;
+                width: 301px;
+            }
+            .txt{
+                top:50px;
+                right:12px;
+                z-index: 2;
+            }
+            .dosomething{
+                z-index: 2;
+            }
+            &.active{
+                .pos-abs-bottom{
+                    animation:700ms 100ms upout;
+                }
+                .mask-play{
+                    display: none;
+                }
+            }
+        }
+        .pos-abs-bottom {
+            position: absolute;
+            bottom: 12px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+@keyframes upout {
+    from{
+        bottom: -50px;
+    }
+    8%{
+        bottom:200px;
+    }
+    10%{
+        bottom: 250px;
+    }
+    60%{
+        bottom: 0;
+    }
+    85%{
+        bottom: 30px;
+    }
+    to{
+        bottom: 12px;
+    }
+}

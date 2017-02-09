@@ -1,0 +1,56 @@
+#eight {
+
+  background: url('../../build/images/phonics/easy/8/bg.png');
+  position: relative;
+  img {
+    position: absolute;
+    &[src$="a-capital.png"] {
+      left: 15%;
+      bottom: 13%;
+    }
+    &[src$="c-red.png"] {
+      right: 10%;
+      bottom: 10%;
+    }
+    &[src$="b-capital.png"] {
+      left: 50%;
+      bottom: 30%;
+    }
+    &[src$="b.png"] {
+      right: 20%;
+      top: 10%;
+    }
+    &[src$="c-blue.png"] {
+      left: 30%;
+      bottom: 50%;
+    }
+    &[src$="a.png"] {
+      right: 10%;
+      top: 30%;
+    }
+  }
+  .popup-0 {
+    left: percentage(100/600);
+    top: percentage(250/500);
+  }
+  .popup-1 {
+    left: 43%;
+    top: 86%;
+  }
+  .popup-2 {
+    left: 62%;
+    top: 87%;
+  }
+  .scale {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+}
+
+@keyframes pulse {
+
+  to {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+}

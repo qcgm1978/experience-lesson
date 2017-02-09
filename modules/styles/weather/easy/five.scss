@@ -1,0 +1,63 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    height:auto;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+}
+.scene{
+    background-color: #fff;
+    width:1920px;
+    height:1080px;
+    position: relative;
+    .animation{
+        left:0;
+        top:0;
+        z-index: 1;
+    }
+    .pos-abs{
+        position: absolute;
+    }
+    .title{
+        left:80px;
+        top:40px;
+    }
+    .boy{
+        left:330px;
+        bottom:100px;
+        cursor: pointer;
+        .bubble-txt{
+            top: -100px;
+            line-height: 50px;
+            width: 450px;
+        }
+    }
+    .girl{
+        right:370px;
+        bottom:100px;
+        cursor: pointer;
+        .bubble-txt{
+            top: -160px;
+            line-height: 50px;
+            right: 10%;
+            z-index: 3;
+        }
+    }
+    .music{
+        right:423px;
+        top:245px;
+    }
+    [class*="sentence_"]{
+        display: none;
+    }
+    .sentence_answer{
+        right:423px;
+        top:390px;
+    }
+    .sentence_question{
+        left:370px;
+        top:430px;
+    }
+}

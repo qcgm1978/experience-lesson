@@ -1,0 +1,112 @@
+#zero {
+  background-image: url('../../build/images/phonics/easy/0/bg.png');
+  position: relative;
+  #gif {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+  }
+  @mixin p-style() {
+
+    position: absolute;
+    font-size: 38px;
+  }
+  #p-0 {
+    @include p-style();
+    left: 53%;
+    bottom: 20%;
+    font-size: 60px;
+    //&:hover{
+    //  color:#FD8A3D;
+    //}
+  }
+  #p-1 {
+    @include p-style();
+    left: 53%;
+    bottom: 13%;
+    //&:hover{
+    //  color:#FD8A3D;
+    //}
+  }
+  #p-2{
+    @include p-style();
+    left: 53%;
+    bottom: 7%;
+    //&:hover{
+    //  color:#FD8A3D;
+    //}
+  }
+  #p-3{
+    @include p-style();
+    left: 53%;
+    bottom: 1%;
+    //&:hover{
+    //  color:#FD8A3D;
+    //}
+  }
+  #the {
+    position: absolute;
+    left: 92px;
+    top: 55px;
+  }
+  #alphabet {
+    position: absolute;
+    left: 217px;
+    top: 164px;
+  }
+  #dog {
+    position: absolute;
+    left: 37px;
+    top: 168px;
+  }
+  #letter {
+    position: absolute;
+    left: 67px;
+    top: 259px;
+  }
+  #cat {
+    position: absolute;
+    left: 18px;
+    top: 297px;
+  }
+  #tree {
+    position: absolute;
+    left: 416px;
+    top: 63px;
+  }
+  #words {
+    position: absolute;
+    left: 50%;
+    $x: -15px;
+    $y: 13px;
+    #word1 {
+      position: relative;
+      top: $y;
+      //transform:translate(0,$y);
+    }
+    #word2 {
+      position: relative;
+      left: $x;
+      top: $y*2;
+      //transform:translate($x,$y*2);
+    }
+    #word3 {
+      position: relative;
+      left: $x*2;
+      top: $y*3
+      //transform:translate($x*2,$y*3);
+    }
+    #word4 {
+      position: relative;
+      left: $x*3;
+      top: $y*4
+      //transform:translate($x*3,$y*4);
+    }
+    #word5 {
+      position: relative;
+      left: $x*4;
+      top: $y*5;
+      //transform:translate($x*4,$y*5);
+    }
+  }
+}

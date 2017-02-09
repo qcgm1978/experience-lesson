@@ -1,0 +1,30 @@
+#nine {
+
+  background-image: url('../../build/images/phonics/easy/9/bg.png');
+  position: relative;
+  #a {
+    position: absolute;
+    left: 15%;
+    top: 35%;
+  }
+  #b {
+    position: absolute;
+    left: 18%;
+    top: 48%;
+  }
+  #c {
+    position: absolute;
+    left: 21%;
+    top: 60%;
+  }
+  p {
+    float: right;
+    font-size: 62px;
+    margin: 30px;
+    margin-left: 50px;
+  }
+  .apple, .ball, .cat {
+    transform: translate(10px, -10px);
+
+  }
+}

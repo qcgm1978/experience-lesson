@@ -1,0 +1,32 @@
+#two {
+
+  background-image: url('../../../../build/images/food/easy/2/bg.png');
+  #txt{
+    width:600px;
+    height:100px;
+    background-image: url('../../../../build/images/food/easy/2/word-bg.png');
+    position: absolute;
+    left: 36%;
+    top: 25%;
+    font-size: 60px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    color: #fff;
+  }
+  #food {
+    position: absolute;
+    top: 64%;
+    left: 28%;
+    width:50%;
+    > img {
+      margin-left: 3%;
+      margin-top: -9%;
+      &:last-child {
+        //margin-left: 17%;
+      }
+    }
+  }
+  position: relative;
+
+}

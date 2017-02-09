@@ -1,0 +1,40 @@
+@import '../common/matching.scss';
+
+#hard-four {
+  &.container {
+    background-image: url(../../../build/images/phonics/hard/4/bg.png);
+    #dialog {
+      position: absolute;
+      width: 606px;
+      height: 160px;
+      transform: translate(-30%, -100%);
+      background-image: url(../../../build/images/phonics/hard/4/txt-bg.png);
+      font-size:38px;
+      text-align: center;
+      color: #fff;
+      p{
+        width: 390px;
+        margin: 40px auto;
+      }
+    }
+    > img {
+
+      position: absolute;
+      &#cat {
+        right: 20%;
+        top: 50%;
+      }
+      &#dog {
+        left: 40%;
+        bottom: 21%;
+
+      }
+      &#ant {
+        left: 24%;
+        top: 50%;
+
+      }
+    }
+
+  }
+}

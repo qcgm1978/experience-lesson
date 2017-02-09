@@ -1,0 +1,95 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    height:auto;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+}
+.scene{
+    background-color: #fff;
+    width:1920px;
+    height:1080px;
+    position: relative;
+    canvas{
+        height:100%;
+        width:100%;
+    }
+    .pos-abs{
+        position: absolute;
+    }
+    .title{
+        left:80px;
+        top:40px;
+    }
+    .matching-wrap{
+        width: 1700px;
+        top:165px;
+        left:120px;
+        height: 876px;
+        position: absolute;
+        overflow: hidden;
+    }
+    .matching-box{
+        width: 1700px;
+        top:0px;
+        left:0px;
+        height: 876px;
+        position: absolute;
+        overflow: hidden;
+    }
+    .col,.space{
+        float: left;
+        img{
+            display: block;
+            margin: auto;
+        }
+    }
+    .cell {
+        margin: 5px;
+        border-radius: 20px;
+    }
+    .cell.active,.cell:hover{
+        box-shadow: 0 0 10px 2px orange;
+    }
+    .col.col-1,.col.col-3{
+        width:257px;
+        float:left;
+        .row{
+            float: left;
+        }
+    }
+    .col.col-2{
+        width:450px;
+        float:left;
+        overflow: hidden;
+        .row{
+            margin: 20px 0;
+            float:left;
+        }
+    }
+    .space{
+        height:100%;
+        width:360px;
+    }
+}
+
+.matching-line:hover i{
+    display: block;
+    cursor: pointer;
+}
+.matching-line i{
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    font-style: normal;
+    left: 40%;
+    border-radius: 15px;
+    top: -10px;
+    margin-left: -10px;
+    background-color: #e4980c;
+    background-image: url(../../../../build/images/weather/hard/7/close.png);
+    background-size: cover;
+}

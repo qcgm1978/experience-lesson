@@ -1,0 +1,136 @@
+#eleven {
+  width: 600px;
+  height: 500px;
+  //transform: scale(3.2);
+  //height: initial;
+  @keyframes pulse {
+
+    to {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  }
+  background-image: url('../../build/images/11/bg-stripe.png');
+  position: relative;
+
+  $elements: 10;
+  #balloons {
+    position: absolute;
+    top: 418px;
+  }
+  #help-container {
+    width: 100%;
+    height: 100%;
+    background: url(../../build/images/11/help_bg.png);
+    .help {
+      width: 90%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  #help-btn {
+    position: absolute;
+    right: -3%;
+    top: 380px;
+    background-color: rgb(245, 163, 0);
+    width: 62px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 900;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(203, 190, 132);
+    cursor: pointer;
+  }
+  .div {
+    float: left;
+    width: 52px;
+    height: 71px;
+    background: url(../../build/images/11/balloon.png) no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 0 4px;
+    cursor: pointer;
+    &.opacity {
+      opacity: 0.4;
+    }
+    .span {
+      position: relative;
+      top: 29%;
+      word-wrap: break-word;
+    }
+  }
+  .div-fly {
+    position: absolute;
+
+    //width: 65px;
+    //height: 80px;
+    //transform: rotate(45deg) scale3d(1, 1, 1);
+    background-size: cover;
+  }
+  .big-balloon {
+    height: 80px;
+    width: 63px;
+  }
+  .fly0 {
+    top: 131px;
+    left: 257px;
+    z-index: 10;
+    div {
+      transform: rotate(-14deg) scale3d(1, 1, 1)
+    }
+  }
+  .fly1 {
+    top: 45px;
+    left: 257px;
+  }
+  .fly2 {
+    top: 146px;
+    left: 193px;
+    z-index: 10;
+    div {
+      transform: rotate(-35deg) scale3d(1, 1, 1);
+    }
+  }
+  .fly3 {
+    top: 108px;
+    left: 149px;
+  }
+  .fly4 {
+    top: 98px;
+    left: 219px;
+
+  }
+  .fly5 {
+    top: 90px;
+    left: 299px;
+  }
+  .fly6 {
+    top: 49px;
+    left: 340px;
+  }
+  .fly7 {
+    top: 99px;
+    left: 373px;
+
+  }
+  .fly8 {
+    top: 163px;
+    left: 378px;
+    z-index: 10;
+    div {
+      transform: rotate(73deg) scale3d(1, 1, 1);
+    }
+
+  }
+  .fly9 {
+    top: 137px;
+    left: 316px;
+    z-index: 10;
+    div {
+      transform: rotate(41deg) scale3d(1, 1, 1);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@media (min-width: 640px) and (min-height: 360px) {
+  html, body, #app, .public-container, #public-control {
+    height: 100% !important;
+    .container {
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      .public-container .control {
+        top: 100%;
+        transform: translate(-50%, -100%);
+      }
+
+      &#eleven {
+        transform: scale(3.2);
+        height: initial;
+        //#balloons {
+        //  width: 100%;
+        //  bottom:20px;
+        //}
+        //.div {
+        //  &.big-balloon{
+        //    width: 52px;
+        //    background-size: contain;
+        //  }
+        //  width: 9%;
+        //  background-size: cover;
+        //  height: 101px;
+        //}
+        //.fly3{
+        //  top: calc(5% + 60px);
+        //  left: calc(50% + 3px);
+        //}
+      }
+    }
+  }
+}

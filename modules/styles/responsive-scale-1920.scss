@@ -1,0 +1,22 @@
+
+@media (min-width: 640px) and (min-height: 360px) {
+  .container {
+
+    //transform: scale(0.7);
+    transform-origin: 50% 0;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 563px) {
+  .container {
+
+    //transform: scale(1.1);
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .container {
+
+    //transform: scale(2.1);
+  }
+}

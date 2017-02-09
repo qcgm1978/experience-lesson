@@ -1,0 +1,94 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+    height:auto;
+}
+.scene{
+    background-color: #fff;
+    width:1920px;
+    height:1080px;
+    position: relative;
+    .animation{
+        left:0;
+        top:0;
+        z-index: 1;
+    }
+    .pos-abs{
+        position: absolute;
+    }
+    .title{
+        left:80px;
+        top:40px;
+    }
+    .list{
+        left:310px;
+        bottom:115px;
+        height:800px;
+        width: 1325px;
+        .list-item{
+            width:512px;
+            cursor: pointer;
+            position: relative;
+            height:100%;
+            display: inline-block;
+            vertical-align: middle;
+            .green-grass{
+                bottom:0;
+            }
+            .yellow-flower,.red-flower{
+                position:absolute;
+                width:459px;
+                height:409px;
+                bottom: 50px;
+                left:0;
+                z-index: 3;
+                .bubble-txt{
+                    bottom:0;
+                    right:0;
+                }
+            }
+            .yellow-flower{
+                .flower{
+                    background-image: url(../../../../build/images/weather/hard/1/yellow-flower.png);
+                }
+            }
+            .rainy{
+                right:0;
+                width:432px;
+                height:519px;
+                top:0;
+                background-image: url(../../../../build/images/weather/hard/1/rainy.png);
+                z-index: 2;
+                .bubble-txt{
+                    top: 20%;
+                    left: -20%;
+                }
+            }
+            .sunny{
+                right:0;
+                width:426px;
+                height:398px;
+                top:0;
+                background-image: url(../../../../build/images/weather/hard/1/sun.png);
+                z-index: 2;
+                .bubble-txt{
+                    top: 20%;
+                    left: -20%;
+                }
+            }
+            .red-flower{
+                .flower{
+                    background-image: url(../../../../build/images/weather/hard/1/red-flower.png);
+                }
+            }
+        }
+    }
+    .yellow-color{
+        color:#fbcc3a;
+    }
+    .red-color{
+        color:red;
+    }
+
+}
+

@@ -1,0 +1,58 @@
+#hard-one {
+  &.container {
+    > img {
+
+      position: absolute;
+      &#tree {
+        left: 56%;
+        top: 38%;
+      }
+      &#cat {
+        left: percentage(65/600);
+        top: percentage(349/500);
+      }
+      &#dog {
+        left: percentage(177/600);
+        top: percentage(383/500);
+      }
+      &#ball {
+        left: percentage(319/600);
+        top: percentage(408/500);
+      }
+      &#music {
+        left: percentage(350/600);
+        top: percentage(82/500);
+      }
+      &#title {
+        left: percentage(10/600);
+        top: percentage(10/500);
+      }
+      &#sentence {
+        left: percentage(19/600);
+        top: 26%;
+      }
+
+    }
+    #a {
+      position: absolute;
+      left: percentage(36/600);
+      top: 34%;
+    }
+    #b {
+      position: absolute;
+      left: percentage(36/600);
+      top: percentage(201/500);
+    }
+    #c {
+      position: absolute;
+      left: percentage(40/600);
+      top: 47%;
+    }
+    #d {
+      position: absolute;
+      left: percentage(40/600);
+      top: 54%;
+    }
+
+  }
+}

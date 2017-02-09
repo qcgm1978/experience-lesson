@@ -1,0 +1,131 @@
+@charset "utf-8";
+body{
+  overflow: hidden;
+  height:auto;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+}
+.scene{
+  background-color: #fff;
+  width:1920px;
+  height:1080px;
+  position: relative;
+  .bg{
+    left:0;
+    top:0;
+    z-index: 0;
+  }
+  .pos-abs{
+    position: absolute;
+  }
+  .title{
+    left:80px;
+    top:40px;
+  }
+.wrap-content{
+  left:260px;
+  top:200px;
+  width:1376px;
+  height:540px;
+  border-radius: 30px;
+  background-color: #c7e0f5;
+  ul,li{
+    padding: 0;
+  }
+  ul.list {
+    width: 85%;
+    margin: auto;
+  }
+  li.list-item {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 40px 0 10px;
+  }
+}
+img{
+  &.sunny{
+    top:100px;
+    right:90px;
+  }
+  &.sunny-boy{
+    right:40px;
+    bottom:290px;
+  }
+
+  &.snowman{
+    bottom: 74px;
+    right:483px;
+  }
+  &.snowy-girl{
+    left:1100px;
+    bottom:40px;
+  }
+
+  &.cloudy{
+    right:1035px;
+    bottom: 200px;
+  }
+  &.cloudy-boy{
+    right:1185px;
+    bottom:35px;
+  }
+
+  &.rainy{
+    left:76px;
+    top:313px;
+  }
+  &.rainy-girl{
+    left:80px;
+    bottom: 80px;
+  }
+  transition:transform .6s ease-in-out;
+  &.active{
+
+    animation: out .5s linear;
+  }
+}
+
+  .color-rainy{
+    color:rgba(150, 143, 135, 0.31);
+  }
+  .color-cloudy{
+    color:#89caf2;
+  }
+  .color-snowy{
+    color:white;
+  }
+  .color-sunny{
+    color:rgb(254, 240, 122);
+  }
+
+}
+
+@keyframes out {
+  from{
+    transform: scale(1);
+  }
+  8%{
+    transform: scale(1.5);
+  }
+  10%{
+    transform: scale(1.2);
+  }
+  60%{
+    transform: scale(.5);
+  }
+  85%{
+    transform: scale(1);
+  }
+  to{transform: scale(.8);
+  }
+}
